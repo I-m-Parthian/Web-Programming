@@ -1,0 +1,52 @@
+	<html>
+	<head>
+		<title>Form 2</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>Title</td>
+				<td>
+					<input list="title">
+					<datalist id="title">
+					<option value="Mr."> </option>
+					<option value="Mrs."> </option>
+					<option value="Miss."> </option>
+					</datalist>
+				</td>
+			</tr>
+			<tr>
+				<td>Name</td><td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td>Phone number</td><td><input type="tel"/></td>
+			</tr>
+			<tr>
+				<td>Email Address</td><td><input type="email"/></td>
+			</tr>
+			<tr>
+				<td>Your Website</td><td><input type="url"/></td>
+			</tr>
+			<tr>
+				<td>No. of items ordered </td><td><input type="number" min="1" max="10"/>(1-10)</td>
+			</tr>
+			<tr>
+				<td>Length </td> <td><input type="range" min="1" max="10"/></td>
+			</tr>
+			<tr>
+				<td>Delivery Date</td><td><input type="date"/></td>
+			</tr>
+			<tr>
+				<td>Time of delivery</td><td><input type="time"/></td>
+			</tr>
+			<tr>
+				<td>color of item</td><td><input type="color"/></td>
+			</tr>
+			<tr>
+				<td><input type="submit"/></td>
+			</tr>
+		</table>
+		<progress value="50" min="0" max="100"></progress>
+		<meter min="0" max="100" low="10" high="80" value="30"></meter>
+	</body>
+</html>
