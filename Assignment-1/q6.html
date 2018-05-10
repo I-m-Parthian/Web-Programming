@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="year">
+	<input onclick="isLeap()" type="button" value="check">
+<p id="op"></p>
+<script type="text/javascript">
+	function isLeap() {
+		var year=document.getElementById("year").value;
+ 		document.getElementById("op").innerHTML=(new Date(year, 1, 29).getDate() === 29)?"true":"false";
+}
+</script>
+</body>
+</html>

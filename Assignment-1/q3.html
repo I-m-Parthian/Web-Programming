@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="day"></p>
+
+<p id="day1"></p>
+
+<p id="day2"></p>
+<script>
+printOutput();
+     function printOutput() {
+        var date = new Date();
+        var m=parseInt(date.getMonth());
+       
+        var d=parseInt(date.getDate());
+        var y=parseInt(date.getFullYear());
+
+         var string = (m<9)?"0"+m:m;
+            string +="-"+((d<9)?"0"+d:d).toString();
+            string +="-"+((y<9)?"0"+y:y).toString();
+
+        document.getElementById("day").innerHTML = "Current time is: "+string;
+
+        string = m.toString()+"/"+d.toString()+"/"+y.toString();
+        document.getElementById("day1").innerHTML = "Current time is: "+string;
+        string = d.toString()+"/"+m.toString()+"/"+y.toString();
+        document.getElementById("day2").innerHTML = "Current time is: "+string;
+
+
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<script>
+    callMe({"arr":"val"});
+    callMe(1);
+    callMe([1,2,3]);
+    callMe("string");
+    function callMe(val){
+        if(typeof(val)=='string')
+            document.write("true<br>");    
+        else
+                document.write("false<br>");    
+    }
+</script>

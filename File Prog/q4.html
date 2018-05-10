@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<script>  
+			function validate()  {
+				var name=document.form.name.value;  
+				var x=document.form.email.value;  
+				var atposition=x.indexOf("@");  
+				var dotposition=x.lastIndexOf("."); 
+				var phone=document.form.phone.value;
+				if (name==null || name==""){  
+				  	alert("Name can't be blank");  
+				  	return false;  
+				}
+				if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+				  	alert("Please enter a valid e-mail address ");  
+				  	return false;  
+				}
+				    
+				if (isNaN(phone) || phone.length < 10 || phone.length>10) {
+				  	alert("Enter 10 digit Numeric value only");
+				  	return false;
+				}    
+			}  
+		</script>  
+		<form name="form"  method="post" action="" onsubmit="return validate();">  
+			name: <input type="text" name="name"><br/>  
+			Email: <input type="text" name="email"><br/>  
+			phone: <input type="text" name="phone"><br/>    
+			<input type="submit" value="register">  
+		</form>  
+	</body>   
+</html>

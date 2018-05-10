@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="in">
+	<input onclick="fun()" type="button" value="guess">
+<p id="op"></p>
+    
+<script type="text/javascript">
+	 var gen = Math.floor((Math.random() * 10) + 1);
+	function fun() {
+		var inp=document.getElementById("in").value;
+ 		if(inp==gen)
+	 		document.getElementById("op").innerHTML="Good Work";
+	 	else
+	 		document.getElementById("op").innerHTML="Not Matched";
+	 		
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+	<body>
+    	<script>
+	        f("2asdf");
+	    	function f(str){
+	         	for(var i = 0; i<str.length; i++){
+	 				if (str.charAt(i) =='a' || str.charAt(i) == 'e' || str.charAt(i) =='i' || str.charAt(i) == 'o' || str.charAt(i) == 'u' || str.charAt(i) == 'A' || str.charAt(i) == 'E' || str.charAt(i) =='I' || str.charAt(i) =='O' || str.charAt(i) == 'U'){
+	 					var pos = i+1;
+	 					document.write("The position of the leftmost vowel " +str.charAt(i)+ " is:" +pos+"\n");
+	 				}
+	 			}
+	    	}
+	        document.write("<br>reverse of given number is:<br>");
+	        ff(123);
+	    	function ff(num){
+	            var temp=0;
+	            while(num>0){
+	                document.write(num%10);
+	                num=parseInt(num/10);
+	            }    
+	    }
+    </script>
+    </body>
+</html>

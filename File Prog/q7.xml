@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <?xml-stylesheet type="text/css" href="q7.css" ?>
+
+
+<!DOCTYPE student [
+<!ELEMENT student (name,Branch,yoj,email)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT Branch (#PCDATA)>
+<!ELEMENT yoj (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+]>
+        <student>
+            Student 1 details:
+                <info>
+                    Name:<name>name one</name>
+                    Branch:<branch>ECE</branch>
+                    Year Of Joining:<yoj>2015</yoj>
+                    Email-ID:<email>name@one.com</email>
+                </info>
+            Student 2 details:
+                <info>
+                    Name:<name>name two</name>
+                    Branch:<branch>CS</branch>
+                    Year Of Joining:<yoj>2016</yoj>
+                    Email-ID:<email>name@two.com</email>
+                </info>
+            Student 3 details:
+                <info>
+                    Name:<name>name thredd</name>
+                    Branch:<branch>IT</branch>
+                    Year Of Joining:<yoj>2016</yoj>
+                    Email-ID:<email>name@three.com</email>
+                </info>
+        </student>
